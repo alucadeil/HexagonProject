@@ -19,6 +19,7 @@ public class SpawnLines : MonoBehaviour
         angles = new float[6]{60f, 120f, 180f, 240f, 300f, 360f};
         angleSpawn = new bool[6]{true, true, true, true, true, true};
         sortingLayersNames = new string[6] {"60", "120", "180", "240", "300", "360"};
+        //fuckme
     }
 
     void Update()
