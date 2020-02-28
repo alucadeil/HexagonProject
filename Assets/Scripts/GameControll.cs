@@ -56,11 +56,4 @@ public class GameControll : MonoBehaviour
             highScoreText1.text = highScoreText.text;
         }
     }
-    
-
-    public void ColorChange()
-    {
-
-    }
-
 }

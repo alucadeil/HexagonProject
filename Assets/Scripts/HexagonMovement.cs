@@ -8,9 +8,7 @@ public class HexagonMovement : MonoBehaviour
 
     void Start()
     {
-        //rb.rotation = Random.Range(0f, 360f);
-        transform.localScale = Vector3.one * 6.8f;
-        
+        transform.localScale = Vector3.one * 6.8f;   
     }
 
     void Update()

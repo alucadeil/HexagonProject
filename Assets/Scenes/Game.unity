@@ -1016,7 +1016,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617f51a00ea545d4ca58ede5cb97f517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 30
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2845,7 +2844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ed19c6b18eed44e986bbc81087e9e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 750
+  rotationSpeed: 1000
   mousePosition: {x: 0, y: 0}
   flag: 0
 --- !u!4 &1879222983
@@ -2898,9 +2897,6 @@ MonoBehaviour:
     type: 3}
   wallCollider: {fileID: 441209485989783665, guid: b35fa339693ad9c4cac6ed290c553bce,
     type: 3}
-  spawnRate: 1
-  numberOfWalls: 3
-  scoreChanger: 10
   spawnMaxRate: 3
 --- !u!4 &1953530256
 Transform:

@@ -2,7 +2,7 @@
 
 public class Rotator : MonoBehaviour
 {
-    public float rotateSpeed = 1f;
+    public static float rotateSpeed = 1f;
     
     void Update()
     {

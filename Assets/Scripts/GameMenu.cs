@@ -8,7 +8,6 @@ public class GameMenu : MonoBehaviour
     public GameObject gameOverMenu;
     public GameObject inGameMenu;
 
-
     void Update()
     {
         if (GameControll.instance.gameOver)
