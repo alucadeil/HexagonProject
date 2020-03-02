@@ -44,6 +44,9 @@ public class GameMenu : MonoBehaviour
 
     public void LoadMenu()
     {
+        Time.timeScale = 0f;
+        gameIsPaused = false;
+        GameControll.instance.gameOver = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
     }
 

@@ -11,14 +11,31 @@ public class OptionsMenu : MonoBehaviour
 
     void Awake()
     {
+        if (PlayerPrefs.HasKey("Volume"))
+        {
+            slider.value = PlayerPrefs.GetFloat("Volume");
+        } else slider.value = 1f;
+        if (PlayerPrefs.HasKey("CurrentGraphics"))
+        {
             dropdown.value = PlayerPrefs.GetInt("CurrentGraphics"); 
-            slider.value = PlayerPrefs.GetFloat("CurrentVolume");
+        } else dropdown.value = 2;
+            
+        
+        
     }
 
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("Volume", Mathf.Log10(volume) * 20);
-        PlayerPrefs.SetFloat("CurrentVolume", volume);
+        if(volume == 0.001f)
+        {
+            audioMixer.SetFloat("Volume", -100);
+            PlayerPrefs.SetFloat("Volume", volume);
+
+        }else 
+        {
+            audioMixer.SetFloat("Volume", Mathf.Log10(volume) * 20);
+            PlayerPrefs.SetFloat("Volume", volume);
+        }
     }
 
     public void SetQuality(int qualityIndex)

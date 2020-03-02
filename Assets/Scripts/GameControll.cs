@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class GameControll : MonoBehaviour
 {
+    public Animator camAnim;
+    public Animator textAnim;
     public static GameControll instance;
     public bool gameOver = false;
     public int score = 0;
@@ -45,7 +48,7 @@ public class GameControll : MonoBehaviour
             return;
         }
         score++;
-     //   textAnim.SetTrigger("Scored");
+        camAnim.SetTrigger("Shake");
         scoreText.text = score.ToString();
         yourScoreText.text = "YOUR SCORE: " + PlayerPrefs.GetInt("Current", score).ToString();
         yourScoreText1.text = yourScoreText.text;
@@ -56,4 +59,5 @@ public class GameControll : MonoBehaviour
             highScoreText1.text = highScoreText.text;
         }
     }
+
 }

@@ -36,6 +36,7 @@ AudioMixerGroupController:
   m_Children: []
   m_Volume: 05bb4eeb385fe864d8ba2fcb8f1fc6fb
   m_Pitch: 1839d5e88bf7cb641b971fcd96a249c6
+  m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 24400004}
   m_UserColorIndex: 0
@@ -66,5 +67,15 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 7e2335a6bc8dd104da0deaf77f5d417b
   m_FloatValues:
+    0968b3527f693ec44bbfe3f3d84ad2ec: 0.108
+    9fbe67b2087697641a86c893663103e0: 1
+    d2cbd663819ad0646958645830a60312: 256
+    8f78d7f3e30ab1944af5151c0399363d: 200
+    952e5a0571efb054fa71da280006e0a4: -10
+    f29f2e4556d6cf944afc2e5299b749e9: 1
+    f1bc5de60f58d46409ae9604cc8c2651: 0.5
+    d2575317c2ecfe64d8a2c29b2ef9e965: 0.63
     05bb4eeb385fe864d8ba2fcb8f1fc6fb: 0.04171297
+    e7c5a61f90571b547b8024b5d799ce4a: 1
+    53a38ecf04434eb4b85bb893b96324ff: 1
   m_TransitionOverrides: {}

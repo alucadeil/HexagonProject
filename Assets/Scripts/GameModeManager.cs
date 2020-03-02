@@ -22,12 +22,12 @@ public class GameModeManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        cameraSpeed = new float[3] {15f, 30f, 35f};
-        spawnRate = new float[3] {1f, 1.5f, 1.8f};
-        addSpeed = new float[3] {0.005f, 0.005f, 0.005f};
-        scoreToWin = new int[3] {50, 50, 50};
+        cameraSpeed = new float[3] {15f, 30f, 40f};
+        spawnRate = new float[3] {1f, 1.7f, 2.2f};
+        addSpeed = new float[3] {0.005f, 0.005f, 0.007f};
+        scoreToWin = new int[3] {30, 50, 75};
         spawnCount = new int[3] {2, 3, 3};
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     public void GameMode(int index)

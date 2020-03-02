@@ -326,7 +326,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: YOUR SCORE
@@ -989,6 +989,8 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -1026,7 +1028,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BackGroundColor: {r: 0.11372549, g: 0.11372549, b: 0.11372549, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1041,7 +1043,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 150
   orthographic: 1
   orthographic size: 5
   m_Depth: -1
@@ -1073,6 +1075,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c934ec436c93a148beaf4229828c39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VignetteEnabled: 1
+  VignettePower: 1
+  VignetteCenter: {x: 0, y: 0}
+  VignetteShader: {fileID: 4800000, guid: 0e9366be9f88ea34c9fc81df03b74ee5, type: 3}
+  BlurEnabled: 0
+  BlurRadius: 0
+  BlurTextureResolutionDivider: 1
+  BlurShader: {fileID: 4800000, guid: 63f6c50725ac97947844a703eb8e6b2c, type: 3}
+--- !u!95 &519420034
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63d6a7ebb1671c749bb4496746d8ed5e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &534643570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,7 +1552,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: YOUR SCORE
@@ -2050,6 +2091,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cc6672443569e4ab7f4a5a06b35e7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camAnim: {fileID: 519420034}
+  textAnim: {fileID: 411674661}
   gameOver: 0
   score: 0
   scoreText: {fileID: 411674662}
@@ -2846,7 +2889,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 1000
   mousePosition: {x: 0, y: 0}
-  flag: 0
 --- !u!4 &1879222983
 Transform:
   m_ObjectHideFlags: 0
@@ -2897,6 +2939,7 @@ MonoBehaviour:
     type: 3}
   wallCollider: {fileID: 441209485989783665, guid: b35fa339693ad9c4cac6ed290c553bce,
     type: 3}
+  coin: {fileID: 5673730182176562520, guid: ac84df2ff8ddb0643911f3bd543bc554, type: 3}
   spawnMaxRate: 3
 --- !u!4 &1953530256
 Transform:
